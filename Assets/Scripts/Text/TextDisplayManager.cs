@@ -4,7 +4,7 @@ using UnityEngine;
 
 using Increstive.CommonUnity.Utility;
 
-public class TextDisplayManager : MonoBehaviour
+public class TextDisplayManager : TextDisplayBase
 {
     // MARK: Inspector
 
@@ -42,7 +42,7 @@ public class TextDisplayManager : MonoBehaviour
     }
 
     // MARK: Public
-    public void Show(string text)
+    public override void Show(string text)
     {
         if (string.IsNullOrEmpty(text))
             return;
@@ -53,7 +53,7 @@ public class TextDisplayManager : MonoBehaviour
         EnqueueText(text);
     }
 
-    public void Clear()
+    public override void Clear()
     {
         StopDrainQueue();
         pendingTexts.Clear();

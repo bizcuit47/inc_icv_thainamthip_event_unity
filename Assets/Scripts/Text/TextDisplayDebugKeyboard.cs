@@ -6,7 +6,7 @@ public class TextDisplayDebugKeyboard : MonoBehaviour
 
     [SerializeField]
     [HelpButton("The display that receives the debug texts.")]
-    private TextDisplayManager manager;
+    private TextDisplayBase manager;
 
     [SerializeField]
     [HelpButton("Sample texts. Space shows one of them picked at random.")]
