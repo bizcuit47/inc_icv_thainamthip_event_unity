@@ -281,7 +281,7 @@ MonoBehaviour:
   - {fileID: 1904481858}
   - {fileID: 996214306}
   - {fileID: 1246332532}
-  isStayUntilReplaced: 0
+  isStayUntilReplaced: 1
 --- !u!4 &313097434
 Transform:
   m_ObjectHideFlags: 0
